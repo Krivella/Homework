@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Поиск квартиры</title>
+</head>
+<body>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<div>
+		   <label for="location">Введите желаемый район/станцию метро</label>  
+     	   <input id="location" type="text" name="location" placeholder="Район/метро">
+		</div>
+		<div>
+			<label for="rooms">Количество комнат</label>
+			<select id="rooms" name="rooms">
+				<option value="one">1</option>
+				<option value="two">2</option>
+				<option value="three">3</option>
+				<option value="four">4</option>
+			</select>
+		</div>
+		<div>
+			<fieldset>
+                <legend>Год сдачи дома</legend>
+                <p>От <input type="number" name="from"></p>
+                <p>До <input type="number" name="to"></p>
+            </fieldset>
+	    </div>
+	    <div>
+	    	<label for="cost">Цена ДО:</label>
+	    	<input id="cost" type="number" name="cost">
+     	    <label for="KU">С КУ/Без КУ</label>
+     	    <input id="KU" type="checkbox" value="KU" name="KU">
+        </div>
+        <div>
+        	<label for="metrag">Максимальная площадь, м<sup>2</sup></label>
+        	<input  id="metrag" type="number" name="metrag" min="40" max="140" step="1">
+        </div>
+        <div>
+     	    <label>
+     		С отделкой
+     		<input type="radio" name="answer" value="otdelka">
+     	    </label>
+     	    <label>
+     		Хочу сделать ремонт сам 
+     		<input type="radio" name="answer" value="remont">
+     	    </label>
+        </div>
+        <div>
+            <label>
+     		Мне нужен балкон
+     		<input type="radio" name="answer" value="balkon+">
+     	    </label>
+     	    <label>
+     		Балкон не обязателен
+     		<input type="radio" name="answer" value="balcon-">	
+        </div>
+        <div>
+     	    <h2>Предпочтительный класс вашего жилья</h2>
+     	    <label>   
+     		Бизнес-класс
+     		<input type="checkbox" name="additional[]" value="buisnes">
+     	    </label>
+     	    <label>
+     		Премиум класс
+     		<input type="checkbox" name="additional[]" value="premium">
+     	    </label>
+     	    <label>
+     		Deluxe super VIP
+     		<input type="checkbox" name="additional[]" value="vip">
+     	    </label>
+        </div>
+        <div>
+			<fieldset>
+                <legend><h2>Предпочтительный этаж</h2></legend>
+                <p>От <input type="number" name="from"></p>
+                <p>До <input type="number" name="to"></p>
+                <label>
+     		    Не первый этаж
+     		    <input type="checkbox" name="additional[]" value="not first">
+     	        </label>
+     	        <label>
+     		    Не последний этаж 
+     		    <input type="checkbox" name="additional[]" value="not last">
+     	        </label>
+            </fieldset>
+	    </div>
+	</form>
+	<a href="rentme.html"><h4>Вернуться на главную страницу</h4></a>
+
+</body>
+</html>
