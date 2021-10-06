@@ -53,7 +53,8 @@
      	    </label>
      	    <label>
      		Балкон не обязателен
-     		<input type="radio" name="answer" value="balcon-">	
+     		<input type="radio" name="answer" value="balcon-">
+     		</label>	
         </div>
         <div>
      	    <h2>Предпочтительный класс вашего жилья</h2>
@@ -73,15 +74,15 @@
         <div>
 			<fieldset>
                 <legend><h2>Предпочтительный этаж</h2></legend>
-                <p>От <input type="number" name="from"></p>
-                <p>До <input type="number" name="to"></p>
+                <label>От <input type="number" name="from"></label>
+                <label>До <input type="number" name="to"></label>
                 <label>
      		    Не первый этаж
-     		    <input type="checkbox" name="additional[]" value="not first">
+     		    <input type="checkbox" name="floor[]" value="not first">
      	        </label>
      	        <label>
      		    Не последний этаж 
-     		    <input type="checkbox" name="additional[]" value="not last">
+     		    <input type="checkbox" name="floor[]" value="not last">
      	        </label>
             </fieldset>
 	    </div>
