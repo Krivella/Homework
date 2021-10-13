@@ -5,7 +5,7 @@
     justify-content: space-around;
     background: lightblue;
     color: lightcoral;
-    margin: 5px;
+    
 }
   a{
 font-size: 20px;
@@ -16,56 +16,40 @@ justify-content: center;
 background color: lime;
  } 
  aside {
-    margin: 10px;
-    padding: 5px;
+    
+    background: lightcoral;
  }
  .flex-container_1{
-   
-    padding:0 5px;
     display: flex;
-    background: grey;
- } 
-
- 
-
-.flex-container_2 {
     
-    margin: 5px;
+ } 
+.col-6,
+.item_uniq {
     display: flex;
-    background: grey;
-    align-items: center;
-    text-align: center;
+    background: gray;
+
+
+}
+
+ .item{
+    margin: 5px;
+    background: gray;
+
  }
 
-.flex-container_3{
-    margin: 5px;
-    display: flex;
-    background: grey;
-}
-.flex-container_4{
-    gap: 5px;
-  
-    
-    display: flex;
-    background: grey;
-}
-.flex-container_5{
-  
-    margin: 5px;
-    display: flex;
-    background: grey;
-    flex-flow: column wrap;
-
- 
-}
 .flex-container_6{
-    
-    margin: 5px;
     display: flex;
     background: lightblue;
 }
 
-
+.middle_1 {
+    margin-left: 35%;
+    padding-top: 15%;
+    font-size: 20px;
+}
+.gray {
+    background: gray;
+}
 
 
 img {
@@ -73,7 +57,13 @@ width: 100%;
 height: auto;
 }
 
-.link{
+#middle {
+    text-align: center;
+    padding: 5%;
+}
+
+
+#beutiful{
 
     padding: 5px;
     background-color: indigo;
@@ -85,6 +75,12 @@ height: auto;
     height: 10%;
     width: 90%;
     text-align: center;
+}
+
+
+.col-10,
+.box {
+    margin: 15px;
 }
 
 }
